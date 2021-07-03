@@ -53,3 +53,27 @@ background-color: #f7f8f9;
   clip: rect(0px, 50px, 100px, 0px);
   background: #f18c21;
 }
+
+.circle .left .progress{
+  z-index:1;
+  animation: left 4s linear both;
+}
+@keyframes left{
+  100%{
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  transform: rotate(105deg);
+  z-index:3;
+
+}
+.circle .right .progress{
+  animation: right 4s linear both;
+  animation-delay:4s;
+}
+@keyframes right{
+  100%{
+    transform: rotate(180deg);
+  }
+}
