@@ -10,7 +10,7 @@ background-color: #f7f8f9;
   height:100px;
   width: 100px;
   position: relative;
-  border:solid green 1px;
+  /*border:solid green 1px; */
 }
 
 .circular .inner{
@@ -51,5 +51,5 @@ background-color: #f7f8f9;
   width: 100%;
   -webkit-border-radius: 100%;
   clip: rect(0px, 50px, 100px, 0px);
-  background: #4158d0;
+  background: #f18c21;
 }
