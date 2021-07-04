@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
 body{
 background-color: #bbbcc1;
 }
@@ -12,7 +14,6 @@ background-color: #f7f8f9;
   position: relative;
   /*border:solid green 1px; */
 }
-
 .circular .inner{
   position: absolute;
   z-index: 6;
@@ -24,7 +25,6 @@ background-color: #f7f8f9;
   background: #f7f8f9;
   border-radius: 100%;
 }
-
 .circular .number{
   position: absolute;
   top:50%;
@@ -35,7 +35,6 @@ background-color: #f7f8f9;
   font-weight:500;
   color:#4158d0;
 }
-
 .circular .bar{
   position: absolute;
   height: 100%;
@@ -44,7 +43,6 @@ background-color: #f7f8f9;
   -webkit-border-radius: 100%;
   clip: rect(0px, 100px, 100px, 50px);
 }
-
 .circle .bar .progress{
   position: absolute;
   height: 100%;
@@ -53,7 +51,6 @@ background-color: #f7f8f9;
   clip: rect(0px, 50px, 100px, 0px);
   background: #f18c21;
 }
-
 .circle .left .progress{
   z-index:1;
   animation: left 4s linear both;
@@ -76,4 +73,77 @@ background-color: #f7f8f9;
   100%{
     transform: rotate(180deg);
   }
+}
+
+.jzdbox1 {
+  width:315px;
+  background:#332f2e;
+  border-radius:5px;
+  overflow:hidden;
+  display:block;
+  margin-bottom:10px;
+  box-shadow:0 0 10px #201d1c;
+  margin:0 auto;
+  margin-top:100px;
+}
+
+.jzdcal {
+  padding:0 10px 10px 10px;
+  box-sizing:border-box!important;
+  background:#749d9e;
+  background: -webkit-linear-gradient(#749d9e, #b3a68b)!important;
+  background: -o-linear-gradient(#749d9e, #b3a68b)!important;
+  background: -moz-linear-gradient(#749d9e, #b3a68b)!important;
+  background: linear-gradient(#749d9e, #b3a68b)!important;
+}
+
+.jzdcalt {
+  font:18px 'Roboto';
+  font-weight:700;
+  color:#f7f3eb;
+  display:block;
+  margin:18px 0 0 0;
+  text-transform:uppercase;
+  text-align:center;
+  letter-spacing:1px;
+}
+
+.jzdcal span {
+  font:11px 'Roboto';
+  font-weight:400;
+  color:#f7f3eb;
+  text-align:center;
+  width:42px;
+  height:42px;
+  display:inline-block;
+  float:left;
+  overflow:hidden;
+  line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+  opacity:0.3;
+  content:'o';
+}
+
+.circle {
+  border:1px solid #f7f3eb;
+  box-sizing:border-box!important;
+  border-radius:200px!important;
+}
+
+span[data-title]:hover:after,
+div[data-title]:hover:after {
+  font:11px 'Roboto';
+  font-weight:400;
+  content:attr(data-title);
+  position:absolute;
+  margin:0 0 100px;
+  background:#282423;
+  border:1px solid #f7f3eb;
+  color:#f7f3eb;
+  padding:5px;
+  z-index:9999;
+  min-width:150px;
+  max-width:150px;
 }
