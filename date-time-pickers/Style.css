@@ -90,17 +90,13 @@ background-color: #f7f8f9;
 .jzdcal {
   padding:0 10px 10px 10px;
   box-sizing:border-box!important;
-  background:#749d9e;
-  background: -webkit-linear-gradient(#749d9e, #b3a68b)!important;
-  background: -o-linear-gradient(#749d9e, #b3a68b)!important;
-  background: -moz-linear-gradient(#749d9e, #b3a68b)!important;
-  background: linear-gradient(#749d9e, #b3a68b)!important;
+  background:#f7f8f9;
 }
 
 .jzdcalt {
   font:18px 'Roboto';
   font-weight:700;
-  color:#f7f3eb;
+  color:grey;
   display:block;
   margin:18px 0 0 0;
   text-transform:uppercase;
@@ -111,7 +107,7 @@ background-color: #f7f8f9;
 .jzdcal span {
   font:11px 'Roboto';
   font-weight:400;
-  color:#f7f3eb;
+  color:black;
   text-align:center;
   width:42px;
   height:42px;
@@ -121,17 +117,28 @@ background-color: #f7f8f9;
   line-height:40px;
 }
 
-.jzdcal .jzdb:before {
-  opacity:0.3;
-  content:'o';
+.jzdcal .jzdb {
+  opacity:0.5;
+  /*content:'o';*/
 }
 
 .circle {
   border:1px solid #f7f3eb;
   box-sizing:border-box!important;
   border-radius:200px!important;
+  background: grey;
+  color: black;
+  opacity: .8;
 }
 
+.active{
+  border:1px solid #f7f3eb;
+  box-sizing:border-box!important;
+  border-radius:200px!important;
+  background: teal;
+  color: black;
+  opacity: .8;
+}
 span[data-title]:hover:after,
 div[data-title]:hover:after {
   font:11px 'Roboto';
