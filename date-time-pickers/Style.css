@@ -51,30 +51,11 @@ background-color: #f7f8f9;
   clip: rect(0px, 50px, 100px, 0px);
   background: #f18c21;
 }
-.circle .left .progress{
-  z-index:1;
-  animation: left 4s linear both;
-}
-@keyframes left{
-  100%{
-    transform: rotate(180deg);
-  }
-}
 .circle .right {
   transform: rotate(105deg);
   z-index:3;
 
 }
-.circle .right .progress{
-  animation: right 4s linear both;
-  animation-delay:4s;
-}
-@keyframes right{
-  100%{
-    transform: rotate(180deg);
-  }
-}
-
 .jzdbox1 {
   width:315px;
   background:#332f2e;
@@ -138,19 +119,4 @@ background-color: #f7f8f9;
   background: teal;
   color: black;
   opacity: .8;
-}
-span[data-title]:hover:after,
-div[data-title]:hover:after {
-  font:11px 'Roboto';
-  font-weight:400;
-  content:attr(data-title);
-  position:absolute;
-  margin:0 0 100px;
-  background:#282423;
-  border:1px solid #f7f3eb;
-  color:#f7f3eb;
-  padding:5px;
-  z-index:9999;
-  min-width:150px;
-  max-width:150px;
 }
