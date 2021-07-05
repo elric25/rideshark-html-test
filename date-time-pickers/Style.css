@@ -30,6 +30,12 @@ background-color: #f7f8f9;
   margin-right: 5rem;
 }
 
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .circular{
   height:100px;
   width: 100px;
@@ -88,6 +94,7 @@ background-color: #f7f8f9;
   box-shadow:0 0 10px #201d1c;
   margin:0 auto;
   margin-top:100px;
+  align-items: stretch;
 }
 
 .jzdcal {
